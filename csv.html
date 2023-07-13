@@ -39,18 +39,19 @@
 <body class="sub_page">
 
   <div class="hero_area">
-    <!-- header section strats -->
+    <!-- header section -->
     <header class="header_section">      
       <div class="header_bottom">
         <div class="header_bottom">
           <div class="container-fluid">
+            
             <nav class="navbar navbar-expand-lg custom_nav-container ">
               <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="">
-              </a>
-    
+              </a>  
+              
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class=""> </span>
+                <span class=""></span>
               </button>
   
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -69,7 +70,7 @@
                       <a class="nav-link" href="doctor.html">Doctors</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="testimonial.html">Testimonial</a>
+                      <a class="nav-link" href="save.html">save</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contact Us</a>
@@ -89,11 +90,6 @@
                       Sign Up
                     </span>
                   </a>
-                  <form class="form-inline">
-                    <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
-                  </form>
                 </div>
               </div>
             </nav>
@@ -101,10 +97,10 @@
         </div>
       </div>
     </header>
-    <!-- end header section -->
+    <!-- /header section -->
   </div>
 
-    <!-- book section -->
+    <!-- csv section -->
     <section class="csv_section layout_padding">
       <div class="container">
         <div class="row">
@@ -113,14 +109,10 @@
               <h4>
                 ADD <span>File csv</span>
               </h4>
-
               <div class="form-row ">
-                <div class="form-group col-lg-4">
-
-                
+                <div class="form-group col-lg-4">          
                   <label for="inputCodeSubject">รหัสวิชา</label>
                   <select name="" class="form-control wide" id="inputCodeSubject" placeholder="pre-project">
-                    <!-- <option value="Normal distribution ">Choose </option> -->
                     <option value="" disabled selected hidden>Choose Code</option>
                     <option value="Normal distribution ">04620301</option>
                     <option value="Normal distribution ">04620301</option>
@@ -132,13 +124,8 @@
                   <input type="number" class="form-control" id="inputNameSubject" placeholder="pre-project">
                 </div>
 
-                <!-- <div class="form-group col-lg-4">
-                  <label for="inputLastName">LastName</label>
-                  <input type="text" class="form-control" id="Name" placeholder="">
-                </div> -->
-
                 <div class="form-group col-lg-4">
-                  <label for="inputGroup">Group</label>
+                  <label for="inputGroup">กลุ่ม</label>
                   <select name="" class="form-control wide" id="inputGroup">
                     <option value="" disabled selected hidden>Choose Group</option>
                     <option value="Normal distribution">63146CPE1</option>
@@ -150,31 +137,28 @@
 
               <div class="form-row ">
                 <div class="form-group col-lg-4">
-                  <label for="inputSection">Section</label>
+                  <label for="inputSection">กลุ่มเรียน</label>
                   <select name="" class="form-control wide" id="inputSection">
-                    <!-- <input type="text" class="form-control" id="inputSection" placehoder="Choose" > -->
                     <option value="" disabled selected hidden>Choose Section</option>
-                    <option value="Normal distribution ">sec 1</option>
-                    <option value="Normal distribution ">sec 2</option>
+                    <option value="Normal distribution ">1</option>
+                    <option value="Normal distribution ">2</option>
                   </select>
                 </div>                
 
                 <div class="form-group col-lg-4">
                   <label for="inputTeacherName">ชื่อผู้สอน</label>
-                  <input type="number" class="form-control" id="inputTeacherName" placeholder="Name">
+                  <input type="text" class="form-control" id="inputTeacherName" placeholder="Name">
                 </div>
-                 
-                <!-- <div class="form-group col-lg-4">
-                  <label for="inputSymptoms">Symptoms</label>
-                  <input type="text" class="form-control" id="inputSymptoms" placeholder="">
-                </div> -->
 
                 <div class="form-group col-lg-4">
-                  <label for="inputDate">Choose File</label>
+                  <label for="inputFlie">อัปโหลดไฟล์</label>
+                  <!-- <input type="number" class="form-control" id="inputFlie" placeholder="Choose file"> -->
                   <div class="input-group date" id="inputDate" data-date-format="Choose file">
-                    <input type="text" class="form-control" readonly>
+                    <input class="form-control" id="inputFlie" placeholder="Choose file">
                     <span class="input-group-addon upload_icon">
                       <i class="fa fa-upload" style="font-size:22px;color:#5c6bc0"></i>
+                      
+
                     </span>
                   </div>
                 </div>
@@ -182,202 +166,14 @@
               </div>
 
               <div class="btn-box">
-                <button type="submit" class="btn ">Submit Now</button>
+                <button type="submit" class="btn ">ยืนยัน</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </section>
-  
-  
-    <!-- end book section -->
-
-  <!-- about section -->
-
-  <!-- <section class="about_section layout_padding">
-    <div class="container  ">
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About <span>Hospital</span>
-              </h2>
-            </div>
-            <p>
-              has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- end about section -->
-
-
-  <!-- info section -->
-  <!-- <section class="info_section ">
-    <div class="container">
-      <div class="info_top">
-        <div class="info_logo">
-          <a href="">
-            <img src="images/logo.png" alt="">
-          </a>
-        </div>
-        <div class="info_form">
-          <form action="">
-            <input type="email" placeholder="Your email">
-            <button>
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="info_bottom layout_padding2">
-        <div class="row info_main_row">
-          <div class="col-md-6 col-lg-3">
-            <h5>
-              Address
-            </h5>
-            <div class="info_contact">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-            <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="info_links">
-              <h5>
-                Useful link
-              </h5>
-              <div class="info_links_menu">
-                <a href="index.html">
-                  Home
-                </a>
-                <a class="active" href="about.html">
-                  About
-                </a>
-                <a href="treatment.html">
-                  Treatment
-                </a>
-                <a href="doctor.html">
-                  Doctors
-                </a>
-                <a href="testimonial.html">
-                  Testimonial
-                </a>
-                <a href="contact.html">
-                  Contact us
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="info_post">
-              <h5>
-                LATEST POSTS
-              </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post1.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post2.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="info_post">
-              <h5>
-                News
-              </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post3.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post4.png" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- end info_section -->
-
-
-  <!-- footer section -->
-  <!-- <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
-  </footer> -->
-  <!-- footer section -->
+    <!-- /csv section -->
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
