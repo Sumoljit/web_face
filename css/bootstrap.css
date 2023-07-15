@@ -4203,6 +4203,7 @@ input[type="button"].btn-block {
   float: none;
 }
 
+
 .navbar-text {
   display: inline-block;
   padding-top: 0.5rem;
@@ -4218,14 +4219,14 @@ input[type="button"].btn-block {
   align-items: center;
 }
 
-.navbar-toggler {
+/* .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-}
+} */
 
 .navbar-toggler:hover, .navbar-toggler:focus {
   text-decoration: none;

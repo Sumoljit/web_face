@@ -39,9 +39,6 @@
 
 <body class="sub_page">
 
-<!-- table recheck -->
-  <body style="font-family:Verdana;color:#aaaaaa;">
-
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -51,7 +48,7 @@
             <a class="navbar-brand" href="index.html">
               <img src="images/logo.png" alt="">
             </a>
-
+            </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> </span>
@@ -68,15 +65,6 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="Recheck.html">ตรวจสอบ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="fail.html">fail</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="save.html">save</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="fail_process.html">f-process</a>
                   </li>
                 </ul>
               </div>
@@ -104,71 +92,58 @@
         </div>
       </div>
     </header>
-    <!--/ header section -->
+    <!-- end header section -->
   </div>
-  <br>
-  <br>
 
-
-  <!-- teble recheck -->
-
-  <!-- <span style="color: #5c6bc0 ; font-size: 24px;">04620301 Pre-Project</span> -->
-  <!-- <span style="color: #5c6bc0 ; font-size: 24px; margin: 100px;">63146CPE1</span> -->
+ <!-- fail section -->
+ <section class="fail-process_section layout_padding">
   <div class="container">
-  <div class="heading_container">
-    <h2>
-      <span style="color: #5463b6 ; font-size: 24px;;">04620301 Pre-Project</span>
-    <div class="container">
-      <p style="color: #a6a1a1 ; font-size: 14px; text-align: rightleft;">กลุ่ม 63146CPE1</p>
-    </h2>
+    <div class="heading_container">
+      <h2>
+        <span>Face  Recognition  Attendance</span>
+      </h2>
+    </div>
   </div>
+
+  <div class="container px-0">
   
-</div>
-  <div>
-    <table class="center">
-        <tr>
-          <th>ชื่อ</th>
-          <th>มาเรียน</th>
-          <th>ขาดเรียน</th>
-        </tr>
+    <div id="" class="carousel  carousel-fade" data-ride="">
 
-        <tr>
-          <td style="text-align: left;">สิริภัสสร มีแววแสง</td>
-          <td><input type="radio" id="N1" name="name1" value="มา">
-          <label for="N1"></label></td>
-          <td><input type="radio" id="N1" name="name1" value="ขาด">
-          <label for="N1"></label></td>
-        </tr>
-        
-        <tr>
-          <td style="text-align: left;"> แสงชัย จันทร์หอมมมมมมมมมมม </td>
-          <td><input type="radio" id="N2" name="name2" value="มา">
-          <label for="N2"> </label></td>
-          <td><input type="radio" id="N2" name="name2" value="ขาด">
-          <label for="N2"> </label></td>
-        </tr>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="box" style="text-align: center;">
+            <div class="fail-process_info heading_container heading_center " >
+              <div class="fail-process_name ">
+                <h5>
+                  ประมวลผลไม่สำเร็จ
+                </h5>
+                <h6>
+                  การประมวลผลล้มเหลว
+                </h6>
+              </div>
+              <!-- <i class="fa fa-quote-left" aria-hidden="true"></i> -->
+            </div>
+            <br>
+            <div class="detail-box heading_container heading_center">
+              <div class="play_btn">
+                <button>
+                  <i class="fa fa-close" style="font-size: 30px;" aria-hidden="true"></i>
+                </button>
+              </div>  
+            </div>
+            <p style="font-size: 18px;"> ***  ไม่มีการประมวลผลจากแอปพลิเคชัน ตรวจสอบข้อมูลอีกครั้ง   *** </p>
+          </div>
+        </div>
 
-        <tr>
-          <td style="text-align: left;">สิริภัสสร มีแววแสง</td>
-          <td><input type="radio" id="N3" name="name3" value="มา">
-          <label for="N3"></label></td>
-          <td><input type="radio" id="N3" name="name3" value="ขาด">
-          <label for="N3"></label></td>
-        </tr>
-        
-      </table>
-
-      <br><br>
-      
-      <button class="button button1">ยกเลิก</button>
-      <button class="button button2">ยืนยัน</button>
-
-      
-
-
+      </div>
+      <div class="carousel_btn-box">
+        <a class="carousel-control-prev"></a>
+        <a class="carousel-control-next"></a>
+      </div>
+    </div>
   </div>
-</div>
-<!-- /table recheck -->
+</section>
+<!-- /fail section -->
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
