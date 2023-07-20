@@ -96,7 +96,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <form>
+            <form novalidate>
               <h4>
                 ADD <span>File csv</span>
               </h4>
@@ -112,7 +112,7 @@
                 
                 <div class="form-group col-lg-4">
                   <label for="inputNameSubject">ชื่อวิชา</label>
-                  <input type="number" class="form-control" id="inputNameSubject" placeholder="pre-project">
+                  <input type="text" class="form-control" id="inputNameSubject" placeholder="pre-project">
                 </div>
 
                 <div class="form-group col-lg-4">
@@ -138,22 +138,19 @@
 
                 <div class="form-group col-lg-4">
                   <label for="inputTeacherName">ชื่อผู้สอน</label>
-                  <input type="text" class="form-control" id="inputTeacherName" placeholder="Name">
+                  <input type="text" class="form-control" id="inputTeacherName" placeholder="Name"  required>
                 </div>
 
                 <div class="form-group col-lg-4">
                   <label for="inputFlie">อัปโหลดไฟล์</label>
                   <!-- <input type="number" class="form-control" id="inputFlie" placeholder="Choose file"> -->
-                  <div class="input-group date" id="inputDate" data-date-format="Choose file">
+                  <div class="input-group date" id="inputfile" data-file-format="Choose file">
                     <input class="form-control" id="inputFlie" placeholder="Choose file">
                     <span class="input-group-addon upload_icon">
                       <i class="fa fa-upload" style="font-size:22px;color:#5c6bc0"></i>
-                      
-
                     </span>
                   </div>
-                </div>
-                
+                </div>                
               </div>
 
               <div class="btn-box">
@@ -178,6 +175,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
+  <!-- validation js -->
+  <script src="js/validate.js"></script>
 
 
 </body>
