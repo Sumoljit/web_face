@@ -96,59 +96,65 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <form novalidate>
+            <form class="needs-validation" novalidate>
               <h4>
                 ADD <span>File csv</span>
               </h4>
               <div class="form-row ">
                 <div class="form-group col-lg-4">          
                   <label for="inputCodeSubject">รหัสวิชา</label>
-                  <select name="" class="form-control wide" id="inputCodeSubject" placeholder="pre-project">
-                    <option value="" disabled selected hidden>Choose Code</option>
+                  <select name="" class="form-control wide" id="inputCodeSubject" placeholder="pre-project" required>
+                    <option value="" disabled selected hidden >Choose Code</option>
                     <option value="Normal distribution ">04620301</option>
                     <option value="Normal distribution ">04620301</option>
                   </select>
+                  <div class="invalid-feedback">Please choose a Subject.</div>
                 </div>  
                 
                 <div class="form-group col-lg-4">
                   <label for="inputNameSubject">ชื่อวิชา</label>
-                  <input type="text" class="form-control" id="inputNameSubject" placeholder="pre-project">
+                  <input type="text" class="form-control" id="inputNameSubject" placeholder="pre-project" required>
+                  <div class="invalid-feedback"></div>
                 </div>
 
                 <div class="form-group col-lg-4">
                   <label for="inputGroup">กลุ่ม</label>
-                  <select name="" class="form-control wide" id="inputGroup">
+                  <select name="" class="form-control wide" id="inputGroup" required>
                     <option value="" disabled selected hidden>Choose Group</option>
                     <option value="Normal distribution">63146CPE1</option>
                     <option value="Normal distribution">63146CPE2</option>
                   </select>
+                  <div class="invalid-feedback">Please choose a Grorp.</div>
                 </div>   
-               
               </div>
 
               <div class="form-row ">
                 <div class="form-group col-lg-4">
                   <label for="inputSection">กลุ่มเรียน</label>
-                  <select name="" class="form-control wide" id="inputSection">
+                  <select name="" class="form-control wide" id="inputSection" required>
                     <option value="" disabled selected hidden>Choose Section</option>
                     <option value="Normal distribution ">1</option>
                     <option value="Normal distribution ">2</option>
                   </select>
+                  <div class="invalid-feedback">Please choose a Section.</div>
                 </div>                
 
                 <div class="form-group col-lg-4">
                   <label for="inputTeacherName">ชื่อผู้สอน</label>
                   <input type="text" class="form-control" id="inputTeacherName" placeholder="Name"  required>
+                  <div class="invalid-feedback"></div>
+
                 </div>
 
                 <div class="form-group col-lg-4">
                   <label for="inputFlie">อัปโหลดไฟล์</label>
-                  <!-- <input type="number" class="form-control" id="inputFlie" placeholder="Choose file"> -->
                   <div class="input-group date" id="inputfile" data-file-format="Choose file">
-                    <input class="form-control" id="inputFlie" placeholder="Choose file">
+                    <input class="form-control" id="inputFlie" placeholder="Choose file" required>
                     <span class="input-group-addon upload_icon">
                       <i class="fa fa-upload" style="font-size:22px;color:#5c6bc0"></i>
                     </span>
+                    <div class="invalid-feedback">Please choose a File.</div>
+
                   </div>
                 </div>                
               </div>
